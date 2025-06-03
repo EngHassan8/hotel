@@ -7,18 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
+
+  <!-- =====================  NAVBAR  ===================== -->
   <header>
     <div class="container nav-container">
       <h1 class="logo">LuxuryHotel</h1>
+
+      <!--  Hamburger (checkbox hack)  -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#rooms">Rooms</a></li>
-        
           <li><a href="#gallery">Gallery</a></li>
-        
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#booking">Booking</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -27,16 +31,16 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- =====================  HERO  ===================== -->
   <section class="hero" id="hero">
     <div class="hero-content">
       <h2>Welcome to Luxury Hotel</h2>
       <p>Where comfort meets elegance</p>
-      <a href="#booking" class="btn">Book Now</a>
+      <a href="#" class="btn">Book Now</a>
     </div>
   </section>
 
-  <!-- About Us -->
+  <!-- =====================  ABOUT  ===================== -->
   <section class="section" id="about">
     <div class="container">
       <h2>About Us</h2>
@@ -44,23 +48,23 @@
     </div>
   </section>
 
-  <!-- Rooms Section -->
+  <!-- =====================  ROOMS  ===================== -->
   <section class="section" id="rooms">
     <div class="container">
       <h2>Our Rooms</h2>
       <div class="cards">
         <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Deluxe Room">
+          <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,w_1000/f_auto/crm/miamifl/Colony-GMCBV_283DBD1C-497F-40E1-BFC4019833A6DF29_5335ec78-cde2-49ce-bf026a6a541e9137.jpg" alt="Deluxe Room" />
           <h3>Deluxe Room</h3>
           <p>Spacious room with king-size bed, sea view, and luxury amenities.</p>
         </div>
         <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Suite">
+          <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,w_1000/f_auto/crm/miamifl/Colony-GMCBV_283DBD1C-497F-40E1-BFC4019833A6DF29_5335ec78-cde2-49ce-bf026a6a541e9137.jpg" alt="Suite" />
           <h3>Suite</h3>
           <p>Includes private balcony, lounge area, and personalized services.</p>
         </div>
         <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Family Room">
+          <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,w_1000/f_auto/crm/miamifl/Colony-GMCBV_283DBD1C-497F-40E1-BFC4019833A6DF29_5335ec78-cde2-49ce-bf026a6a541e9137.jpg" alt="Family Room" />
           <h3>Family Room</h3>
           <p>Perfect for families with multiple beds and kid-friendly features.</p>
         </div>
@@ -68,7 +72,7 @@
     </div>
   </section>
 
-  <!-- Dining Section -->
+  <!-- =====================  DINING  ===================== -->
   <section class="section" id="dining">
     <div class="container">
       <h2>Dining</h2>
@@ -76,26 +80,26 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
+  <!-- =====================  GALLERY  ===================== -->
   <section class="section" id="gallery">
     <div class="container">
       <h2>Gallery</h2>
-      <div class="gallery">
-        <img src="https://via.placeholder.com/200x150" alt="Hotel 1">
-        <img src="https://via.placeholder.com/200x150" alt="Hotel 2">
-        <img src="https://via.placeholder.com/200x150" alt="Hotel 3">
-        <img src="https://via.placeholder.com/200x150" alt="Hotel 4">
+      <div class="gallery-grid">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDmc1VVsDf6wpsXftHF30BsTn8BaDvj1v-rA&s" alt="Hotel 1" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiqBUjWhCZp0Pq4D64sSR4JGRi9viZq7uAQ&s" alt="Hotel 2" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiqBUjWhCZp0Pq4D64sSR4JGRi9viZq7uAQ&s" alt="Hotel 3" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDmc1VVsDf6wpsXftHF30BsTn8BaDvj1v-rA&s" alt="Hotel 4" />
       </div>
     </div>
   </section>
 
-  <!-- Amenities Section -->
+  <!-- =====================  AMENITIES  ===================== -->
   <section class="section" id="amenities">
     <div class="container">
       <h2>Amenities</h2>
       <ul class="amenities">
         <li>Free Wi-Fi</li>
-        <li>Spa & Sauna</li>
+        <li>Spa &amp; Sauna</li>
         <li>Swimming Pool</li>
         <li>Fitness Center</li>
         <li>24/7 Room Service</li>
@@ -103,43 +107,44 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  <!-- =====================  TESTIMONIALS  ===================== -->
   <section class="section" id="testimonials">
     <div class="container">
       <h2>What Our Guests Say</h2>
       <blockquote>
-        "Absolutely amazing stay! The rooms were spotless and the service was top-notch."
-        <footer>- Sarah K.</footer>
+        “Absolutely amazing stay! The rooms were spotless and the service was top-notch.”
+        <footer>— Sarah K.</footer>
       </blockquote>
     </div>
   </section>
 
-  <!-- Booking Section -->
+  <!-- =====================  BOOKING  ===================== -->
   <section class="section" id="booking">
     <div class="container">
       <h2>Make a Booking</h2>
       <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="date" required>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="date" required />
         <button type="submit" class="btn">Book Now</button>
       </form>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- =====================  CONTACT  ===================== -->
   <section class="section" id="contact">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>Email: contact@luxuryhotel.com | Phone: +123 456 7890</p>
+      <p>Email: contact@luxuryhotel.com&nbsp;| Phone: +123 456 7890</p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- =====================  FOOTER  ===================== -->
   <footer>
     <div class="container">
       <p>&copy; 2025 LuxuryHotel. All Rights Reserved.</p>
     </div>
   </footer>
+
 </body>
 </html>
